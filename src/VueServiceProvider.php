@@ -27,5 +27,9 @@ class VueServiceProvider extends ServiceProvider
 
         //Commands Registrieren
         $this->commands( \ITHilbert\Vue\App\Console\Commands\VueCopyFiles::class );
+        //Register Routes
+        $this->loadRoutesFrom(__DIR__ . '/Routes/web.php');
+        //Register Views
+        $this->loadViewsFrom(__DIR__ .'/Resources/views', 'vue');
     }
 }
