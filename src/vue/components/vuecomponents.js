@@ -4,7 +4,8 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-window.Vue = require('vue');
+//window.Vue = require('vue');
+import Vue from 'vue'
 
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests
