@@ -1,0 +1,41 @@
+{
+    "name": "ithilbert/vue",
+    "type": "libary",
+    "license": "MIT",
+    "description": "Packe für meine Vue Componenten",
+    "keywords": [
+        "it-hilbert",
+        "laravel",
+        "homepage",
+        "vue",
+        "vue.js"
+    ],
+    "authors": [{
+        "name": "Jörg Hilbert",
+        "homepage": "https://www.it-hilbert.com",
+        "role": "Developer"
+    }],
+    "homepage": "https://www.it-hilbert.com",
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "ITHilbert\\Vue\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ITHilbert\\Vue\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ITHilbert\\Vue\\VueServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    }
+}
