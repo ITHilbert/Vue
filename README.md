@@ -5,7 +5,7 @@ Hier erstelle ich meine Vue.js Komponenten
 
 ## Installation
 ```
-php artisan vendor:publish --provider="ITHilbert\Vue\VueServiceProvider --force"
+php artisan vendor:publish --provider="ITHilbert\Vue\VueServiceProvider" --force
 ```
 
 ### config/app.php
