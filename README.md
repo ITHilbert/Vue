@@ -21,7 +21,7 @@ npm run prod
 
 ### HTML Anpassung, damit es läuft
 ```
-<div class="#vue-app">
+<div id="vue-app">
 ... Inhalt ...
 </div>
 ```
