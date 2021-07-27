@@ -19,10 +19,16 @@ class VueServiceProvider extends ServiceProvider
             __DIR__ .'/assets' => public_path('vendor/vue'),
         ]);
 
-        //Ressources js und sass
+        //Ressources js
         $this->publishes([
-            __DIR__.'/vue' => resource_path('vue'),
+            __DIR__.'/Resources/vue' => resource_path('js/vendor/vue'),
         ]);
+
+        //Ressources Sass
+        $this->publishes([
+            __DIR__.'/Resources/sass' => resource_path('sass/vendor/vue'),
+        ]);
+
 
 
         //Commands Registrieren

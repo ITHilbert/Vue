@@ -1,6 +1,6 @@
 {{-- resources/views/admin/dashboard.blade.php --}}
 
-@extends('master')
+@extends('layouts.vue')
 
 @section('title', 'Vue Components')
 

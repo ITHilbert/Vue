@@ -13,8 +13,8 @@ import Vue from 'vue'
  * CSRF token as a header based on the value of the "XSRF" token cookie.
  */
 
-window.axios = require('axios');
-window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+//window.axios = require('axios');
+//window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /**
  * The following block of code may be used to automatically register your
@@ -52,7 +52,7 @@ Vue.component('checkbox', require('./input/checkbox.vue').default);
 Vue.component('radiobox', require('./input/radiobox.vue').default);
 Vue.component('input-hidden', require('./input/input-hidden.vue').default);
 Vue.component('hlabel', require('./input/hlabel.vue').default);
-Vue.component('editor', require('./editor.vue').default);
+//Vue.component('editor', require('./editor.vue').default);
 
 //Buttons
 Vue.component('hbutton', require('./buttons/HButton.vue').default);
