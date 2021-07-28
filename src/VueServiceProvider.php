@@ -14,21 +14,20 @@ class VueServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //Vue Compontents kopieren nach Public
+        //Vue nach Public
         $this->publishes([
-            __DIR__ .'/assets' => public_path('vendor/vue'),
-        ]);
-
-        //Ressources js
-        $this->publishes([
-            __DIR__.'/Resources/vue' => resource_path('js/vendor/vue'),
-        ]);
-
-        //Ressources Sass
-        $this->publishes([
+            __DIR__ .'/Resources/js' => resource_path('js/vendor/vue'),
+            __DIR__ .'/Resources/css' => resource_path('css/vendor/vue'),
+            __DIR__.'/Resources/vue' => resource_path('vue/vendor/vue'),
             __DIR__.'/Resources/sass' => resource_path('sass/vendor/vue'),
         ]);
 
+
+        //Vue nach Public
+        $this->publishes([
+            resource_path('js/vendor/vue') => public_path('vendor/vue'),
+            resource_path('css/vendor/vue') => public_path('vendor/vue'),
+        ]);
 
 
         //Commands Registrieren
